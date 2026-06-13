@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería Interactiva</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f2f5;
+        margin: 0;
+    }
+
+    header {
+        background-color: #0078d7;
+        color: white;
+        padding: 20px;
+    }
+
+    .menu {
+        margin: 30px;
+    }
+
+    button {
+        padding: 12px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #0078d7;
+        color: blue;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #005fa3;
+    }
+
+    .apartado {
+        display: none;
+        max-width: 700px;
+        margin: 20px auto;
+        background: blue;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>En esta pagina publicaremos el proceso de como hemos creado nuestro seguidor solar, en la asignatura de "Tecnologia y digitalización</h1>
+    <p>Los autores son:Karina,Juan de Dios,Alejandra y Pedro.</p>
+	<img src=https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/seguidores%20solares.jpg
+</header>
+
+<div class="menu">
+    <button onclick="mostrar('foto1')">Tarea 1</button>
+    <button onclick="mostrar('foto2')">Tarea 2</button>
+    <button onclick="mostrar('foto3')">Tarea 3</button>
+    <button onclick="mostrar('foto4')">Tarea 4</button>
+    <button onclick="mostrar('foto5')">Tarea 5</button>
+    <button onclick="mostrar('foto6')">Tarea 6</button>
+	<button onclick="mostrar('foto7')">Tarea 7</button>
+</div>
+
+<div id="foto1" class="apartado">
+    <h2>Busqueda de información</h2>
+    <img src="https://www.mikitsolar.es/img/cms/Todo%20sobre%20el%20seguidor%20solar/le-tracker-solaire.jpg" alt="seguidor">
+    <p>
+        En esta tarea nuestro objetivo ha sido buscar informacion sobre los seguidores solares.
+    </p>
+</div>
+
+<div id="foto2" class="apartado">
+    <h2>Generación de ideas y diseño del seguidor solar</h2>
+    <p>
+        En esta tarea cada uno ha ido generando ideas propias hasta hacer un mix de todas nuestras ideas.
+    </p>
+</div>
+
+<div id="foto3" class="apartado">
+    <h2>Tarea 3: Diseño del seguidor solar en planos y 3D</h2>
+    <img src="https://patentados.com/img/2011/06/1105106/seguidor-solar-para-equipos-productores-de-energia.1.jpg" alt="planos">
+    <p>
+        En esta tarea a cada uno se le fue asignada a crear una parte del plano del seguidor solar en FreeCAD.
+    </p>
+</div>
+<div id="foto4" class="apartado">
+    <h2>Planificación de la construcción del seguidor solar</h2>
+    <img src="https://patentados.com/img/2008/09/seguidor-solar.9.jpg" alt="planos">
+    <p>
+        En esta tarea hemos tenidio que:calcular los tiempos,el orden de construcción y asignar cada parte del seguidor a cada persona.   </p>
+</div>
+<div id="foto5" class="apartado">
+    <h2> Construcción y pruebas del seguidor solar</h2>
+    <img src="https://static.construible.es/media/2016/12/070511_apolo.gif" alt="Construcción">
+    <p>
+        En esta tarea hemos construido el seguidor solar siguiendo los plantes previamente diseñados,hempos documentado el proceso y por ultimo reflexionado sobre el resultado.
+    </p>
+</div>
+<div id="foto6" class="apartado">
+    <h2> Confección de la memoria del proyecto.</h2>
+    <p>
+        En esta tarea hemos tenido que crear un documento para poner todo nuestro proceso creando nuestro eguidor solar, desde las primeras ideas hasta nuestra reflexion final de todo el proyecto.
+    </p>
+</div>
+<div id="foto7" class="apartado">
+    <h2>Divulgación</h2>
+    <p>
+        Esta fue la presentación en la que el maestro nos hizo algunas preguntas y nostros tuvimos que explicar delante de:nuestros compañeros,alumnos de 2 y por último algunos padres que asistieron.
+    </p>
+</div>
+<script>
+function mostrar(id) {
+    const apartados = document.querySelectorAll('.apartado');
+
+    apartados.forEach(apartado => {
+        apartado.style.display = 'none';
+    });
+
+    document.getElementById(id).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
